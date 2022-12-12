@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <title>Contact Form</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum_scale=1.0">
+</head>
+<body>
+
+    <div class="Container">
+        <div class="Contect-box">
+            <div class="right"></div>
+            <div class="boootm-sapce">
+                <h2>Add User Details</h2>
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    <input type="text" class="field" placeholder="Name" name="name">
+                    <input type="email" class="field" placeholder="Email" name="email">
+                    <input type="number" class="field" placeholder="Age" name="age">
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+    <!-- <h3>Contact us</h3> -->
+
+    <!-- <form method="post" action="" id="Contact" role="form" novalidate="novalidate" class="bv-form">
+        {% csrf_token %}
+        <div class="form-group first-form boootm-sapce">
+            <input class="form-control" type="text" name="name" id="name" value="" placeholder="Name" d=""
+        </div>
+    </form> -->
+
+
+    <!-- <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+            <label for="Name" class="fcf-label">Your name</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Your email address</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Your message</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+        </div> -->
